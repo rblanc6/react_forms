@@ -40,3 +40,33 @@
 .read-the-docs {
   color: #888;
 }
+
+.char {
+  font-style: italic;
+  font-size: small;
+  color: rebeccapurple;
+  margin: 0;
+}
+
+.h2 {
+  background-color: black;
+  color: white;
+}
+
+.button {
+  background-color: rebeccapurple;
+  color: white;
+  font-variant: small-caps;
+  font-weight: bold;
+  margin: 10px;
+}
+.field {
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.message {
+  color: rebeccapurple;
+  font-weight: bold;
+  font-style: italic;
+}
