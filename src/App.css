@@ -60,6 +60,8 @@
   font-weight: bold;
   margin: 10px;
 }
+
+
 .field {
   margin: 0;
   padding-bottom: 5px;
@@ -69,4 +71,9 @@
   color: rebeccapurple;
   font-weight: bold;
   font-style: italic;
+}
+
+input:focus {
+  border: solid 2px rebeccapurple;
+  outline: 0;
 }

@@ -18,11 +18,16 @@ export default function Authenticate({ token }) {
         }
       );
       const result = await response.json();
+
       setSuccessMessage(result.message);
-      console.log(result);
+      if (!token) {
+        setSuccessMessage("No token found, please sign up first.");
+      } 
+      // console.log("random text");
     } catch (error) {
       setError(error.message);
     }
+    console.log(error);
   }
 
   return (
@@ -31,6 +36,8 @@ export default function Authenticate({ token }) {
       <div className="message">
         {successMessage && <p>{successMessage}</p>}
         {error && <p>{error}</p>}
+        {/* {!token && <p>Please sign up.</p>} */}
+        {/* {console.log("token:", token)} */}
       </div>
       <button className="button" onClick={handleClick}>
         Authenticate Token!
